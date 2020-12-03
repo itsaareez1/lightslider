@@ -228,6 +228,7 @@
                 refresh.chbreakpoint();
                 $el.addClass('lightSlider').wrap('<div class="lSSlideOuter ' + settings.addClass + '"><div class="lSSlideWrapper"></div></div>');
                 $slide = $el.parent('.lSSlideWrapper');
+                $(".lSSlideOuter").children(":nth-child(2)").hide();
                 if (settings.rtl === true) {
                     $slide.parent().addClass('lSrtl');
                 }
